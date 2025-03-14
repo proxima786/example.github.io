@@ -5,25 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jebraan Mudholkar</title>
     <style>
+        /* General Styling */
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             padding: 20px;
             line-height: 1.6;
         }
-        h1 {
-            text-align: left;
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 2px solid #ddd;
         }
-        img {
-            width: 200px;
-            border-radius: 10px;
-            float: left;
-            margin-right: 20px;
+        .navbar h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #333;
         }
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 15px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            color: #007bff;
+        }
+
+        /* Profile Section */
         .container {
             display: flex;
             align-items: center;
+            margin-top: 20px;
+        }
+        img {
+            width: 250px; /* Increased size */
+            border-radius: 10px;
+            margin-right: 20px;
         }
         .text {
             flex: 1;
@@ -35,7 +58,18 @@
 </head>
 <body>
 
-    <h1>Jebraan Mudholkar</h1>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1>Jebraan Mudholkar</h1>
+        <div>
+            <a href="#">CV</a>
+            <a href="#">Research</a>
+            <a href="#">Talks</a>
+            <a href="#">Teaching</a>
+        </div>
+    </div>
+
+    <!-- Profile Section -->
     <div class="container">
         <img src="profile.jpg" alt="Jebraan Mudholkar">
         <div class="text">
